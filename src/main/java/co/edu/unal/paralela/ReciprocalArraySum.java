@@ -30,18 +30,18 @@ public final class ReciprocalArraySum {
 
     /**
      * Calculates the sum of reciprocals using the ForkJoin framework by dividing the input array into two parts.
+     * Adapts to available hardware resources by utilizing the common ForkJoinPool.
      *
      * @param input Arreglo de entrada
      * @return La suma de los recíprocos del arreglo de entrada
      */
     protected static double parArraySum(final double[] input) {
-        assert input.length % 2 == 0;
-
-        ForkJoinPool pool = new ForkJoinPool(2);
+        ForkJoinPool pool = new ForkJoinPool();  // Utilizes the common pool which adapts to available hardware
 
         class SumTask extends RecursiveTask<Double> {
             private final int start;
             private final int end;
+            private static final int SEQUENTIAL_THRESHOLD = 5000;  // Adjust based on profiling
 
             SumTask(int start, int end) {
                 this.start = start;
@@ -50,14 +50,15 @@ public final class ReciprocalArraySum {
 
             @Override
             protected Double compute() {
-                if (end - start <= 1000) {
+                int length = end - start;
+                if (length <= SEQUENTIAL_THRESHOLD) {
                     double localSum = 0;
                     for (int i = start; i < end; i++) {
                         localSum += 1 / input[i];
                     }
                     return localSum;
                 } else {
-                    int mid = start + (end - start) / 2;
+                    int mid = start + length / 2;
                     SumTask left = new SumTask(start, mid);
                     SumTask right = new SumTask(mid, end);
                     left.fork();
@@ -92,7 +93,7 @@ public final class ReciprocalArraySum {
 
             @Override
             protected Double compute() {
-                if (end - start <= 1000) {
+                if (end - start <= 1000) { // Adjust this threshold based on profiling
                     double localSum = 0;
                     for (int i = start; i < end; i++) {
                         localSum += 1 / input[i];

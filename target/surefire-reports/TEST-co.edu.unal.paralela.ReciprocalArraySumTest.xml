@@ -1,80 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="co.edu.unal.paralela.ReciprocalArraySumTest" time="63.9" tests="4" errors="0" skipped="0" failures="2">
+<testsuite name="co.edu.unal.paralela.ReciprocalArraySumTest" time="33.193" tests="4" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="java.vm.version" value="21.0.2"/>
-    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/21.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/naimu/Downloads/ejercicio_1"/>
-    <property name="java.vm.vendor" value="Homebrew"/>
-    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="20.0.1+9-29"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-20\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\halo5\Paralela"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="path.separator" value=":"/>
-    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="user.country" value="CO"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/naimu/Downloads/ejercicio_1"/>
+    <property name="user.dir" value="C:\Users\halo5\Paralela"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
-    <property name="java.runtime.version" value="21.0.2"/>
-    <property name="os.arch" value="aarch64"/>
-    <property name="java.io.tmpdir" value="/var/folders/c7/5yj2pb1n5k73wmhnckg_9dvm0000gn/T/"/>
+    <property name="java.runtime.version" value="20.0.1+9-29"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\halo5\AppData\Local\Temp\"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="stderr.encoding" value="UTF-8"/>
-    <property name="os.name" value="Mac OS X"/>
-    <property name="classworlds.conf" value="/opt/homebrew/Cellar/maven/3.9.6/libexec/bin/m2.conf"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="stdout.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/naimu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="maven.conf" value="/opt/homebrew/Cellar/maven/3.9.6/libexec/conf"/>
+    <property name="user.variant" value=""/>
+    <property name="stderr.encoding" value="cp437"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Program Files\Apache Software Foundation\apache-maven-3.9.2\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="stdout.encoding" value="cp437"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-20\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python312\Scripts\;C:\Python312\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\Apache Software Foundation\apache-maven-3.9.2\bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\minikube;C:\Program Files\Go\bin;C:\Users\halo5\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.9\Scripts\;C:\Users\halo5\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.9\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\halo5\AppData\Local\Microsoft\WindowsApps;C:\Python34\Scripts;C:\Users\halo5\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\halo5\.dotnet\tools;C:\MinGW\bin;C:\Users\halo5\AppData\Roaming\npm;C:\Users\halo5\go\bin;."/>
+    <property name="maven.conf" value="C:\Program Files\Apache Software Foundation\apache-maven-3.9.2/conf"/>
     <property name="jdk.debug" value="release"/>
-    <property name="java.class.version" value="65.0"/>
+    <property name="java.class.version" value="64.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="14.4"/>
-    <property name="library.jansi.path" value="/opt/homebrew/Cellar/maven/3.9.6/libexec/lib/jansi-native"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="user.home" value="/Users/naimu"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\Apache Software Foundation\apache-maven-3.9.2\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\halo5"/>
     <property name="user.timezone" value="America/Bogota"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="java.specification.version" value="21"/>
-    <property name="user.name" value="naimu"/>
-    <property name="java.class.path" value="/opt/homebrew/Cellar/maven/3.9.6/libexec/boot/plexus-classworlds-2.7.0.jar"/>
-    <property name="java.vm.specification.version" value="21"/>
+    <property name="java.specification.version" value="20"/>
+    <property name="user.name" value="halo5"/>
+    <property name="java.class.path" value="C:\Program Files\Apache Software Foundation\apache-maven-3.9.2\boot\plexus-classworlds-2.7.0.jar"/>
+    <property name="java.vm.specification.version" value="20"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
-    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/21.0.2/libexec/openjdk.jdk/Contents/Home"/>
-    <property name="apple.awt.application.name" value="Launcher"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-20"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.version" value="21.0.2"/>
-    <property name="native.encoding" value="UTF-8"/>
-    <property name="java.vendor" value="Homebrew"/>
-    <property name="maven.home" value="/opt/homebrew/Cellar/maven/3.9.6/libexec"/>
-    <property name="file.separator" value="/"/>
-    <property name="java.version.date" value="2024-01-16"/>
-    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.version" value="20.0.1"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\Apache Software Foundation\apache-maven-3.9.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="java.vendor.version" value="Homebrew"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testParSimpleTwoMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="0.223">
-    <failure message="Se esperaba que la implementación de dos tareas en paralelo pudiera ejecutarse  1.500000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 1.000000x veces" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Se esperaba que la implementación de dos tareas en paralelo pudiera ejecutarse  1.500000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 1.000000x veces
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at co.edu.unal.paralela.ReciprocalArraySumTest.testParSimpleTwoMillion(ReciprocalArraySumTest.java:114)
-</failure>
-  </testcase>
-  <testcase name="testParSimpleTwoHundredMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="39.385"/>
-  <testcase name="testParManyTaskTwoMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="0.213"/>
-  <testcase name="testParManyTaskTwoHundredMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="24.079">
-    <failure message="Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse  6.400000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 1.933884x veces" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Se esperaba que la implmentación de muchas tareas en paralelo pudiera ejecutarse  6.400000x veces más rápido, pero solo alcanzo a mejorar la rapidez (speedup) 1.933884x veces
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.assertTrue(Assert.java:20)
-	at co.edu.unal.paralela.ReciprocalArraySumTest.testParManyTaskTwoHundredMillion(ReciprocalArraySumTest.java:149)
-</failure>
-  </testcase>
+  <testcase name="testParSimpleTwoHundredMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="16.483"/>
+  <testcase name="testParManyTaskTwoHundredMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="16.372"/>
+  <testcase name="testParManyTaskTwoMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="0.154"/>
+  <testcase name="testParSimpleTwoMillion" classname="co.edu.unal.paralela.ReciprocalArraySumTest" time="0.184"/>
 </testsuite>
